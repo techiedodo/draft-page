@@ -1,0 +1,27 @@
+/* main:styles.sass */
+.contact
+  background-color: inherit
+  margin-bottom: 237px
+  h3
+    @include side-border(7px, solid, $green)
+    .small
+      font-size: 75%
+      text-shadow: 1px 1px 1px white
+      color: $black
+  h3, p, .small
+    line-height: 1.5
+  p
+    font-size: 120%
+  img
+    transform: scaleX(-1)
+    filter: FlipH
+    position: relative
+    margin-top: 1em
+    left: 75%
+    opacity: 0
+    transition: opacity 1s
+  #right-form
+    border: 2px solid gray
+    border-radius: .5em
+    padding: .75em
+    background-color: rgba(206, 220, 253, 0.38)

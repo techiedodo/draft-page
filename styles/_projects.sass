@@ -1,0 +1,27 @@
+/* main:styles.sass */
+.projects
+  background-color: inherit
+  color: $purple
+  text-shadow: none
+  h3, h4
+    line-height: 1.5
+  h3
+    @include margin-sm
+    @include side-border(7px, solid, $green)
+    .small
+      font-size: 75%
+      text-shadow: 1px 1px 1px white
+      color: $black
+  h4
+    margin-top: 2.5em
+    margin-bottom: 1.5em
+    font-size: 160%
+  img
+    opacity: 0
+    transition: opacity 3s
+    border: 2px solid $purple
+    margin: 0 auto
+    &:hover
+      transform: translate(-5px, 5px)
+      box-shadow: 15px 20px 50px -16px black
+    transition: all .5s ease

@@ -1,0 +1,74 @@
+/* main:styles.sass */
+.container-fluid
+  padding: 0
+.blur-image
+  filter: blur(3.5px) contrast(165%)
+.shrink-logo
+  transform: scale(.75)
+  transition: transform .5s
+.text-opacity
+  opacity: .05
+.zero
+  padding: 0 0
+  margin: 0 0
+.row
+  margin-left: 0px
+  margin-right: 0px
+.center-align
+  margin: 0 auto
+// Mixin & Var
+$orange: rgb(255,165,0)
+$purple: #663399
+$white: #fdfdfd
+$green: #76C947
+$black: #1f1b1b
+$primary-color: #FFA900
+$left-background: #5ABBC0
+$right-background: #FA824B
+
+@mixin primary-font
+  // font-family: 'Anton', sans-serif
+  // font-family: 'Oswald', sans-serif
+  font-family: 'Raleway', sans-serif
+@mixin secondary-font
+  // font-family: 'Taviraj', serif
+  font-family: 'Oswald', sans-serif
+@mixin inner-wrapper
+  margin: 0 auto
+  max-width: 1050px
+  padding: 0 1em
+@mixin paddings
+  padding-top: 3.5em
+  padding-bottom: 6em
+@mixin paddings-sm
+  padding-top: 3.5em
+  padding-bottom: 3.5em
+@mixin margin-sm
+  margin-top: 2.5em
+  margin-bottom: 2.5em
+@mixin format-text
+  margin: 0
+  padding-top: 1.5em
+  padding-bottom: 1.5em
+@mixin grow
+  transition: all .8s ease-out
+  img
+    transform: scale(1)
+    transition: all .8s ease-out
+@mixin side-border ($px, $type, $color)
+  border-left: $px $type $color
+  padding-left: .5em
+// font
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false)
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1)
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width')
+  $min-breakpoint: $min / $responsive-unitless * 100
+  @media (max-#{$dimension}: #{$min-breakpoint})
+    font-size: $min
+  @if $max
+    $max-breakpoint: $max / $responsive-unitless * 100
+    @media (min-#{$dimension}: #{$max-breakpoint})
+      font-size: $max
+  @if $fallback
+    font-size: $fallback
+  font-size: $responsive

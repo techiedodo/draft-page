@@ -1,0 +1,33 @@
+/* main: styles.sass*/
+header
+  position: relative
+  overflow: hidden
+  border-bottom: 2px solid $green
+  z-index: 1
+  .header
+    position: relative
+    height: 80vh
+    width: 100%
+    background: url(../assets/images/background-lg.jpg) center center no-repeat fixed
+      size: cover
+    transition: filter 1s
+  .content
+    #main-header
+      position: absolute
+      top: 27vh
+      width: 100%
+      h1
+        line-height: 1.4
+        @include responsive-font(4vw, 30px, 120px, 36px)
+        padding: 0 2em
+        text-align: justify
+        .small
+          padding-top: .85vh
+          text-shadow: 2px 2px 1px #fb9d45
+          color: white
+      transition: opacity .5s
+      button
+        position: relative
+        bottom: -4em
+        left: 50%
+        transform: translateX(-50%)

@@ -5,14 +5,179 @@ html(lang="en")
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width, initial-scale=1')
-    meta(name='author' content='Luis Gaytan')
-    meta(name='description' content='Add Content Here')
+    meta(name='author' content='TechieDodo')
+    meta(name='description' content='TechieDodo is a California based web development agency focused on providing affordable wed design and development services to small businesses.')
     
-    title Title | Description
+    title TechieDodo | Web Development Consulting
     link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous')
     link(rel='stylesheet' href='./styles/styles.min.css')
-  body
-    h1 Website
+    link(rel="shortbut icon" type="image/x-icon" href="./assets/images/TDfavicon.ico")
+    script(src='https://www.google.com/recaptcha/api.js')
+    //if lt IE 9
+      script(src='//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js')
+  body.container-fluid
+    nav.menu-section
+      .logo
+        img(src="./assets/images/dodo.png", alt="TechieDodo Logo")
+      .menu-toggle
+        .one
+        .two
+        .three
+      .menu
+        ul(role='navigation' class='hidden')
+          li
+            a(href="#") Home
+          li
+            a(href="#") Services
+          li
+            a(href="#") About Us
+          li
+            a(href="#") Our Work
+          li
+            a(href="#") Contact Us
+    header
+      .header
+      .content
+        #main-header
+          h1.main-header 
+            | Working with Small Businesses to Create & Build Digital Products.
+            .small Techie Dodo Can Help You Be Adaptable. Let's Talk.
+          button.btn.btn-primary.btn-lg Lets Get Started
+        
+    section.services
+      #services
+        .row
+          .col-sm-offset-2.col-sm-8.text-center
+            h2 Custom website design is just the beginning...
+        .row
+          .col-sm-6.text-center
+            img(alt='MacBook Showing Website', src='./assets/images/macbook.png' class='img-responsive' id='left-img')
+            h3 Digital
+            hr
+            ul.zero
+              li Branding & Logo Design
+              li eCommerce Web Design
+              li WordPress Web Design
+          .col-sm-6.text-center
+            img(alt='MacBook Showing Website', src='./assets/images/technical.png' class='img-responsive' id='right-img')
+            h3 Technical
+            hr
+            ul.zero
+              li Web Maintenance & Hosting
+              li Application Development
+              li Search Engine Optimization
+    section.cta
+      .row
+        .col-sm-12.text-center
+          h2
+            | Your website shouldn't be an expense.
+            br 
+            | Let us turn it into a revenue-driving asset. 
+          img(src="./assets/images/piggy-bank.svg", alt="")
+          br
+          a.btn.btn-primary.btn-lg(href='#contact' type='button' ) Upgrade your site Today.
+    section.secondary
+      .row
+        .col-sm-6.row#left
+          .col-xs-12.col-md-6.secondary-left
+            img(alt='MacBook Showing Website', src='./assets/images/Responsive-Web.png' class='img-responsive center-align')
+          .col-xs-12.col-md-6
+            h4 Responsive Websites
+            p.text-justify Whether you need to blow away competition or require a stunning website design to inform people about what you do, we provide fully custom website design crafted for your audience and built around your needs.
+        .col-sm-6.row#right
+          .col-xs-12.col-md-6.col-lg-5.secondary-right
+            img(alt='Marketing Lightbulb', src='./assets/images/Marketing-Adj.png' class='img-responsive center-align')
+          .col-xs-12.col-md-6.col-lg-7
+            h4 Marketing 2.0
+            p.text-justify At TechieDodo, we can research your existing customer base or investigate new markets. Don't rest on your laurels; there are legions of potential clients just waiting to hear all about you.
+    section.projects
+      #projects
+        h3.text-uppercase Recent Projects &mdash;
+          br
+          .small Take a look at some of our work, and see how it postively impacted our clients
+        .row#samples
+          .col-xs-4
+            a(href='http://chatsworthdental.com' target='_blank')
+              img(src='./assets/images/ChatsworthDental.jpg' class='img-responsive')
+          .col-xs-4
+            a(href='http://AmericanCrewTransportation.com' target='_blank')
+              img(src='./assets/images/AmericanCrewTransportation.jpg' class='img-responsive')
+          .col-xs-4
+            a(href='http://luisgaytan.com' target='_blank')
+              img(src='./assets/images/WordPress-Website.jpg' class='img-responsive')    
+        h4.text-center 
+          | We work to ensure you understand all aspects of your investment. 
+          br
+          | TechieDodo is a JARGON-Free environment.
+    section.about
+      .row#about
+        .col-sm-5
+          img(alt='California Bear', src='./assets/images/cali-bear.png' class='img-responsive center-align' id='cali-bear')
+        .col-sm-7
+          h3.text-uppercase TechieDodo &mdash; ABOUT US
+            br
+            .small Cutting Edge Development from Sunny Southern California
+          p Businesses that want to strengthen their brand and grow their profits come to us for modern website design and marketing services.
+          p Our talented team focuses on working with small businesses in almost every sector to create websites, e-commerce shops, brand identities and much more.
+    section.contact
+      .row#contact
+        .col-sm-6
+          h3 We'll Put You on Equal Footing &mdash;
+            br
+            .small Your Small Business Will have the Big Business Presence on the Web
+          p.text-justify At TechieDodo we offer custom services at an affordable price. With all the challenges of running your own business, having to build a competitive online prescence should not be one of them. 
+          p.text-justify Other services offer one-size fits all solution, but only we can ensure that your website is tailored to match your business needs. Templates will work well for some, but if you want help to create your unique brand, let TechieDodo help you achieve this goal.
+          img(alt='Techie Dodo Logo', src='./assets/images/dodo-logo.png' id='logo-bottom' class='opacity')
+        .col-sm-6#right-form
+          h4.text-center Adapt & Fly. Let's Work Together.
+          form#contact-form(method='post' action='email.php' role='form')
+            .messages
+            .form-group
+              label(for='email') E-Mail
+              input(type='email' class='form-control' id='email' placeholder='Please enter Email' required='require' data-error='Please enter email.')
+              .help-block.with-errors
+            .form-group
+              label(for='name') Name
+              input(type='text' class='form-control' id='name' placeholder='Please enter Name' required='require' data-error='Please enter name.')
+              .help-block.with-errors
+            .form-group
+              label(for='message') Message
+              textarea(class='form-control' id='message' placeholder='Please enter Message' rows='5' required='require' data-error='Please enter message.')
+              .help-block.with-errors
+            .form-group
+              .g-recaptcha(data-sitekey='6LcU4R4UAAAAAM_ZX-YrD1fjKo-V9zpVIwhkvUQB')
+            input(type='submit' name='submit' class='btn btn-success btn-sm'  id='submit' value='Send Message')
+    footer
+      .footer.row
+        .col-xs-6
+          h5 Menu
+            ul 
+              li
+                a(href='#home') Home
+              li
+                a(href='#services') Services
+              li
+                a(href='#about-us') About Us
+              li
+                a(href='#contact') Contact Us
+        .col-xs-6
+          h5 Social
+            ul 
+              li
+                a(href='https://mobile.twitter.com/TechieDodo' target='_blank') Twitter
+              li
+                a(href='https://github.com/TechieDodo' target='_blank') GitHub
+              li
+                a(href='https://linkedin.com/in/luisgaytan' target='_blank') LinkedIn
+      hr
+      .row
+        .col-xs-5
+          h5
+            span#first Techie
+            span#second Dodo
+        .col-xs-7.text-right 
+          h5 Adapt & Fly Copyright &mdash; 2017 
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
     script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous")
+    script(src="./scripts/validator.js")
     script(src="./scripts/scripts.js")

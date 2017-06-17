@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Taviraj|Work+Sans')
+@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway:800')
+@import "variables"
+@import "nav"
+@import "header"
+@import "services"
+@import "cta"
+@import "secondary"
+@import "projects"
+@import "about"
+@import "contact"
+@import "footer"
+body
+  h1,h2,h3,h4,h5
+    @include primary-font
+  p, ul
+    @include secondary-font
+
+  position: relative
+  background-color: $white
+  color: white
+  text-shadow: 1px 1px 2px $black
+  hr
+    max-width: 8em
+    border-bottom: 1.5px solid $primary-color
+    margin-top: 10px
+  #services, #about, #projects, #contact
+    @include inner-wrapper
+    @include paddings
+    h2
+      @include format-text
+  .services, .cta, .secondary, .projects, .about, .contact
+    position: relative
+    z-index: 2
+  .cta
+    @include paddings
+  .secondary
+    .row
+      @include inner-wrapper
+    position: relative
+  footer
+    hr
+      max-width: 80%
+    padding-top: 1.5em
+    padding-bottom: 1.5em
+    border-top: 2px solid $orange
+    position: fixed
+    width: 100%
+    bottom: 0
+    background-color: #313131
+    z-index: 0

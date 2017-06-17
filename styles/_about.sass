@@ -1,0 +1,20 @@
+/* main:styles.sass */
+.about
+  border-top: 2px solid $green
+  border-bottom: 2px solid $orange
+  h3
+    @include side-border(7px, solid, $green)
+    .small
+      font-size: 75%
+      text-shadow: 1px 1px 1px white
+      color: $black
+  h3, p
+    line-height: 1.5
+  p
+    font-size: 120%
+  background:
+    image: linear-gradient(rgba(203, 203, 230, 0.5) 100%, transparent), url('https://images.unsplash.com/photo-1495316331924-236b755286eb?dpr=1&auto=format&fit=crop&w=1500&h=998&q=80&cs=tinysrgb&crop=&bg=')
+    position: center
+    attachment: fixed
+    repeat: no-repeat
+    size: cover
