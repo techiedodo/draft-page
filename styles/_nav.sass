@@ -9,7 +9,7 @@
     background-color: rgba(0,0,0,0.5)
     position: absolute
 nav
-  position: sticky
+  position: fixed
   top: 0
   z-index: 5
   .logo
@@ -21,14 +21,14 @@ nav
   .menu-toggle
     width: 40px
     height: 30px
-    position: absolute
+    position: fixed
     top: 20px
     right: 29px
     cursor: pointer
     &.on
-      position: sticky
-      top: 23px
-      left: 96vw
+      position: fixed
+      top: 20px
+      left: 95vw
       z-index: 4
       .one
         transform: rotate(45deg) translate(4px, 6px)
@@ -45,8 +45,9 @@ nav
       backface-visibility: hidden
       transition: all 0.3s
   .menu
-    position: sticky
+    position: fixed
     top: 4vh
+    width: 100%
     ul
       padding: 0
       list-style: none
