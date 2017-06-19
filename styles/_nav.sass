@@ -67,6 +67,9 @@ nav
           display: block
           &:hover
             background-color: rgba(0,0,0,0.5)
+  @include mobile-screens
+    .menu-toggle.on
+      left: 91vw
 .menu-section
   &.on
     z-index: 10
