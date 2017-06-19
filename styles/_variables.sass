@@ -58,6 +58,12 @@ $right-background: #FA824B
 @mixin side-border ($px, $type, $color)
   border-left: $px $type $color
   padding-left: .5em
+
+// Media Queries
+@mixin mobile-screens()
+  @media only screen and (max-width: 414px)
+    @content
+
 // font
 @mixin responsive-font($responsive, $min, $max: false, $fallback: false)
   $responsive-unitless: $responsive / ($responsive - $responsive + 1)
