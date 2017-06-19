@@ -11,6 +11,9 @@ header
     background: url(../assets/images/background-md.jpg) center center no-repeat fixed
       size: cover
     transition: filter 1s
+    @include mobile-screens
+      background: url(../assets/images/background-sm.jpg) center center no-repeat fixed
+        size: cover
   .content
     #main-header
       position: absolute
