@@ -28,13 +28,13 @@ html(lang="en")
           li
             a(href="#") Home
           li
-            a(href="#") Services
+            a(href="#services") Services
           li
-            a(href="#") About Us
+            a(href="#projects") Our Work
           li
-            a(href="#") Our Work
+            a(href="#about") About Us
           li
-            a(href="#") Contact Us
+            a(href="#contact") Contact Us
     header
       .header
       .content
@@ -45,6 +45,7 @@ html(lang="en")
           button.btn.btn-primary.btn-lg Lets Get Started
         
     section.services
+      a(name='services')
       #services
         .row
           .col-sm-offset-2.col-sm-8.text-center
@@ -91,6 +92,7 @@ html(lang="en")
             h4 Marketing 2.0
             p.text-justify At TechieDodo, we can research your existing customer base or investigate new markets. Don't rest on your laurels; there are legions of potential clients just waiting to hear all about you.
     section.projects
+      a(name='projects')
       #projects
         h3.text-uppercase Recent Projects &mdash;
           br
@@ -110,6 +112,7 @@ html(lang="en")
           br
           | TechieDodo is a JARGON-Free environment.
     section.about
+      a(name='about')
       .row#about
         .col-sm-5
           img(alt='California Bear', src='./assets/images/cali-bear.png' class='img-responsive center-align' id='cali-bear')
@@ -128,8 +131,10 @@ html(lang="en")
           p.text-justify At TechieDodo we offer custom services at an affordable price. With all the challenges of running your own business, having to build a competitive online prescence should not be one of them. 
           p.text-justify Other services offer one-size fits all solution, but only we can ensure that your website is tailored to match your business needs. Templates will work well for some, but if you want help to create your unique brand, let TechieDodo help you achieve this goal.
           img(alt='Techie Dodo Logo', src='./assets/images/dodo-logo.png' id='logo-bottom' class='opacity')
+        
         .col-sm-6#right-form
           h4.text-center Adapt & Fly. Let's Work Together.
+          a(name='contact')
           form#contact-form(method='post' action='email.php' role='form')
             .messages
             .form-group
@@ -153,13 +158,15 @@ html(lang="en")
           h5 Menu
             ul 
               li
-                a(href='#home') Home
+                a(href="#") Home
               li
-                a(href='#services') Services
+                a(href="#services") Services
               li
-                a(href='#about-us') About Us
+                a(href="#projects") Our Work
               li
-                a(href='#contact') Contact Us
+                a(href="#about") About Us
+              li
+                a(href="#contact") Contact Us
         .col-xs-6
           h5 Social
             ul 
