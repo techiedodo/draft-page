@@ -64,6 +64,10 @@ $right-background: #FA824B
   @media only screen and (min-device-width: 375px) and (max-device-width: 736px)
     @content
 
+@mixin tablets()
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+    @content
+
 // font
 @mixin responsive-font($responsive, $min, $max: false, $fallback: false)
   $responsive-unitless: $responsive / ($responsive - $responsive + 1)
